@@ -1,7 +1,7 @@
 /***   PETDETAILS PAGE ***/
 /*  <PetDetailsPage />  */
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Redirect } from 'react-router-dom';
 import { getPetDetails } from '../../api/petfinder';
 import Hero from '../../components/hero';
 import Pet from '../../components/pet';
@@ -31,9 +31,7 @@ const PetDetailsPage = () => {
       {loading ? (
         <h3>Loading...</h3>
       ) : error ? (
-        <div>
-          {/* Redirect to /pet-details-not-found if there was an error! */}
-        </div>
+        <div>{<Redirect to="/pet-details-not-found" />}</div>
       ) : (
         <main>
           <Hero
