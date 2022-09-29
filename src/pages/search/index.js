@@ -1,7 +1,7 @@
 /***   SEARCHPAGE ***/
 /* <SearchPage />  */
 import React, { useState, useEffect, useMemo } from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Hero from '../../components/hero';
 import { getPets } from '../../api/petfinder';
 import Pet from '../../components/pet';
@@ -26,19 +26,24 @@ const SearchPage = () => {
 
   return (
     <div className="page">
-      <Hero displayText={`Results for ${queryParams.get('name')}`} />
+      <Hero displayText={`Results for "${queryParams.get('name')}"`} />
 
       <h3>Pets available for adoption near you</h3>
 
       <main>
         <div className="grid">
           {pets.map((pet) => (
-            <Pet animal={pet} key={pet.id} isDetails={false} />
+            <Link
+              key={pet.id}
+              to={`/${pet.type.toLowerCase()}/${pet.id}`}
+              className="pet"
+            >
+              <Pet animal={pet} key={pet.id} isDetails={false} />
+            </Link>
           ))}
         </div>
       </main>
     </div>
   );
 };
-
 export default SearchPage;

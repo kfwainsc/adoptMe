@@ -1,3 +1,7 @@
+/*** INDEX.JS ***/
+/*** Project: Adopt A Pet  ***/
+/*** By: Kendra Wainscott 2022 ***/
+/*** Sources: Skeleton from Codecacdemy 2022 ***/
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';

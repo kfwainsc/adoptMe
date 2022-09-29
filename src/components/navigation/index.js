@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { getPetTypes } from '../../api/petfinder';
-import Logo from '../../assets/logo.svg';
 import Search from '../search';
 
 const Navigation = () => {
@@ -19,8 +18,12 @@ const Navigation = () => {
 
   return (
     <nav>
-      <div className="nav-logo">
-        <img src={Logo} alt="Petlover" />
+      <div className="nav-logo-contain">
+        <img
+          className="nav-logo"
+          src={'/petsLogoSMALL.png'}
+          alt="Adopt Me Paw Print Logo"
+        />
         <Search />
       </div>
       <ul className="nav-links">
@@ -52,5 +55,4 @@ const Navigation = () => {
     </nav>
   );
 };
-
 export default Navigation;

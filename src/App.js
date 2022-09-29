@@ -1,3 +1,7 @@
+/*** APP.JS ***/
+/*** Project: Adopt A Pet  ***/
+/*** By: Kendra Wainscott 2022 ***/
+/*** Sources: Skeleton from Codecacdemy 2022 ***/
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import HomePage from './pages/home';
 import SearchPage from './pages/search';

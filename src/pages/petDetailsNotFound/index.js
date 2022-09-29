@@ -7,10 +7,12 @@ const PetDetailsNotFound = () => {
   return (
     <main className="page not-found">
       <h3>404: Who let the dogs out?</h3>
-      <p>
-        Sorry, but the details for this pet have not been uploaded by the
-        shelter yet. Check back later!
-      </p>
+      <div>
+        <p>Sorry!</p>
+        <p>Details for this pet have not been uploaded by the shelter yet. </p>
+        <p>Check back later!</p>
+      </div>
+
       <img
         src="https://i.chzbgr.com/full/8362031616/h9EB970C5/weve-lost-our-corgination"
         alt=""

@@ -5,6 +5,10 @@ import React from 'react';
 const Hero = ({ image, displayText }) => {
   const type = '';
 
+  /*const backgroundSize = () => {
+    image ? 'contain' : 'cover';
+  };*/
+
   return (
     <div
       className="hero-container"
@@ -14,7 +18,7 @@ const Hero = ({ image, displayText }) => {
         }")
           `,
         backgroundBlendMode: 'saturation',
-        backgroundSize: 'cover',
+        backgroundSize: image ? 'contain' : 'cover',
         backgroundColor: '#0000008f'
       }}
     >
