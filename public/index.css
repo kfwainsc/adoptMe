@@ -217,6 +217,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 4rem 0.8rem;
   justify-items: center;
+  flex-direction: column-reverse;
   /*background-color: var(--grayPurple);*/
 }
 .pet-image-container {

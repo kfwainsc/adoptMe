@@ -35,7 +35,7 @@ const PetDetailsPage = () => {
       ) : (
         <main>
           <Hero
-            image={data.photos[1]?.full || 'https://i.imgur.com/aEcJUFK.png'}
+            image={data.photos[1]?.full || '/pets-hero.png'}
             displayText={`Meet ${data.name}`}
           />
           <div className="pet-detail">

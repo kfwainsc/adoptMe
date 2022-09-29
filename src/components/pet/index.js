@@ -1,7 +1,9 @@
 /***  PET COMPONENT  ***/
 /* <Pet animal={} id={} isDetails={} /> */
+/*** Project: Adopt A Pet  ***/
+/*** By: Kendra Wainscott 2022 ***/
+/*** Sources: Skeleton from Codecacdemy 2022 ***/
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Pet = ({ animal, isDetails }) => {
   const choosePicture = (animal) => {
@@ -50,13 +52,4 @@ const Pet = ({ animal, isDetails }) => {
     </article>
   );
 };
-
 export default Pet;
-/* <Link
-      key={animal.id}
-      to={`/${animal.type.toLowerCase()}/${animal.id}`}
-      className="pet"
-    >
-   </Link>
-
-*/

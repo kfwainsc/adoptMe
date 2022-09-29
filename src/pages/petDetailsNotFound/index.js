@@ -1,3 +1,9 @@
+/***  PET DETAILS NOT FOUND PAGE
+      < PetDetailsNotFound /> 
+*/
+/*** Project: Adopt A Pet  ***/
+/*** By: Kendra Wainscott 2022 ***/
+/*** Sources: Skeleton from Codecacdemy 2022 ***/
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
